@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpqu2xvcolyrs"]
+
+[ext_resource type="Texture2D" uid="uid://dvfj86422w6n0" path="res://assets/Free Version Red Sprite/Front Movement.png" id="1_i5u2a"]
+[ext_resource type="Script" path="res://characters/hero_combat.gd" id="1_rmdgf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_760th"]
+radius = 6.0
+
+[node name="HeroCombat" type="CharacterBody2D" groups=["Friend"]]
+script = ExtResource("1_rmdgf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+texture = ExtResource("1_i5u2a")
+hframes = 6
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_760th")

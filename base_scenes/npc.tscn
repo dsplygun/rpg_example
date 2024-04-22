@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbw47x3yyajgg"]
+
+[ext_resource type="Script" path="res://scripts/world_map_object.gd" id="1_pxi12"]
+[ext_resource type="Script" path="res://scripts/npc_area.gd" id="2_6abyk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54loh"]
+size = Vector2(32, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1s4u0"]
+size = Vector2(24, 32)
+
+[node name="NPC" type="StaticBody2D"]
+script = ExtResource("1_pxi12")
+
+[node name="NPCArea2D" type="Area2D" parent="."]
+script = ExtResource("2_6abyk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCArea2D"]
+shape = SubResource("RectangleShape2D_54loh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1s4u0")
+debug_color = Color(0.101961, 0.588235, 0.74902, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

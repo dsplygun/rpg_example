@@ -1,0 +1,9 @@
+[style name="NovelStyle"]
+join Zagreus 1 [animation="Instant In Or Out"]
+[voice path="res://dialogues/VO/dialogue1/zagreus-1.wav" volume="0.0"]
+Zagreus (Default): It's got to be her. Then, here goes nothing... Ahem. In the name of Hades! Olympus, I accept this message.
+leave Zagreus [animation="Instant In Or Out"]
+join Athena 1 [animation="Instant In Or Out" wait="true"]
+[voice path="res://dialogues/VO/dialogue1/athena-1.wav" volume="0.0"]
+Athena (Default): Hail, noble Cousin. Now let's get you from that miserable place. I'll see that all of us upon Olympus do our part, beginning here with me.
+leave Athena [animation="Instant In Or Out"]
